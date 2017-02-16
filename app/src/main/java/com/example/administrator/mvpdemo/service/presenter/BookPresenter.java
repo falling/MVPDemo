@@ -58,7 +58,8 @@ public class BookPresenter implements Presenter {
 
     @Override
     public void attachIncomingIntent(Intent intetn) {
-}
+        
+    }
     public void getSearchBooks(String name,String tag,int start,int count){
         mCompositeSubscription.add(manager.getSearchBooks(name,tag,start,count)
                 .subscribeOn(Schedulers.io())
